@@ -1,6 +1,6 @@
 module.exports = function(value, options, key, attributes) {
 	
-	var validName = /^[A-Za-z]+([\-'][A-Za-z]*)?\s[A-Za-z]+([\-'][A-Za-z]*)?[A-Za-z\s\-']*$/
+	var validName = /^[a-z- \xC0-\xFF]+([\-'][a-z- \xC0-\xFF]*)?\s[[a-z- \xC0-\xFF]+([\-'][a-z- \xC0-\xFF]*)?[a-z- \xC0-\xFF\s\-']*$/i
       if (!validName.test(value)){
         return "Please enter full name.";
       }

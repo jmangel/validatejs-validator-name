@@ -16,6 +16,10 @@ var goodDataHard = {
 	name: "Billie-Joe O'Reilly-Howard"
 }
 
+var goodDataForeign = {
+	name: "Joãozinho O'Tömáß-Bunn Scott"
+}
+
 var constraints = {
 	name: {
 		name: {}
@@ -23,9 +27,10 @@ var constraints = {
 }
 
 test('name test', function(t){
-	t.plan(3);
+	t.plan(4);
 
 	t.notOk(validate(goodData, constraints));
 	t.ok(validate(badData, constraints));
 	t.notOk(validate(goodDataHard, constraints));
+	t.notOk(validate(goodDataForeign, constraints));
 });
