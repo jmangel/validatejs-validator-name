@@ -1,0 +1,28 @@
+{
+  "name": "validatejs-name",
+  "version": "0.1.0",
+  "description": "Custom validator for full name in validate.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/nametest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmangel/validatejs-validator-name.git"
+  },
+  "keywords": [
+    "validate.js",
+    "full",
+    "name"
+  ],
+  "author": "John Mangel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmangel/validatejs-validator-name/issues"
+  },
+  "homepage": "https://github.com/jmangel/validatejs-validator-name#readme",
+  "devDependencies": {
+    "tape": "^4.6.0",
+    "validate.js": "^0.10.0"
+  }
+}
